@@ -2,7 +2,7 @@
 
 ## What?
 
-An [`abcli`](https://github.com/kamangir/awesome-bash-cli) plugin is a mechanism to quickly build a bash cli around existing code. Here are examples of `abcli` plugins:
+An [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`) plugin is a mechanism to quickly build a bash cli around existing code. Here are examples of `abcli` plugins:
 
 1. [blue-rvr](https://github.com/kamangir/blue-rvr): A low-cost rover that carries a camera, runs deep learning vision models through python and TensorFlow, and is cloud-connected.
 1. [blue-sbc](https://github.com/kamangir/blue-sbc): python + bash bootstrap for single board computers: Raspberry Pi & Jetson Nano.
@@ -11,9 +11,9 @@ An [`abcli`](https://github.com/kamangir/awesome-bash-cli) plugin is a mechanism
 
 ## How?
 
-To build an [`abcli`](https://github.com/kamangir/awesome-bash-cli) plugin you need code that is executed through the command line. This code should exist in a repo, i.e. `<plugin-name>`. Now, follow these steps:
+To build an `abcli` plugin you need code that is executed through the command line. This code should exist in a repo, i.e. `<plugin-name>`. Now, follow these steps:
 
-1. Make sure that you have an up-to-date copy of [`abcli`](https://github.com/kamangir/awesome-bash-cli) running on a dev machine.
+1. Make sure that you have an up-to-date copy of `abcli` running on a dev machine.
 1. Checkout the repo `<plugin-name>`.
 1. Run `abcli plugin add_to <plugin-name>`.
 1. Run `abcli init` and validate that `<plugin-name>` is loaded.
@@ -21,5 +21,5 @@ To build an [`abcli`](https://github.com/kamangir/awesome-bash-cli) plugin you n
 
 ## Advanced
 
-1. Update [`keywords.py`](../abcli/keywords/keywords.py).
+1. Update [`keywords.py`](https://github.com/kamangir/awesome-bash-cli/blob/main/abcli/keywords/keywords.py).
 1. Remove the file [`no-browser`](./no-browser) in the plugin repo and develop the [browser views](https://github.com/kamangir/browser).

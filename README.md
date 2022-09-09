@@ -7,6 +7,7 @@ An [`abcli`](https://github.com/kamangir/awesome-bash-cli) plugin is a mechanism
 1. [blue-bracket](https://github.com/kamangir/blue-bracket): Multiple machine vision & ai designs on raspberry pi and jetson nano on the edge.
 1. [blue-rvr](https://github.com/kamangir/blue-rvr): A low-cost rover that carries a camera, runs deep learning vision models through python and TensorFlow, and is cloud-connected.
 1. [blue-sbc](https://github.com/kamangir/blue-sbc): python + bash bootstrap for single board computers: Raspberry Pi & Jetson Nano.
+1. [browser](https://github.com/kamangir/browser): A browser for cloud objects with metadata.
 1. [RAW Vancouver PORTAL 2022](https://github.com/kamangir/RAW-Vancouver-PORTAL-2022): A [digital art installation](https://rawartists.com/vancouver).
 
 ## How?

@@ -1,4 +1,6 @@
-# abcli plugins
+# blue-plugins
+
+## What?
 
 An [`abcli`](https://github.com/kamangir/awesome-bash-cli) plugin is a mechanism to quickly build a bash cli around existing code. Here are examples of `abcli` plugins:
 
@@ -6,7 +8,7 @@ An [`abcli`](https://github.com/kamangir/awesome-bash-cli) plugin is a mechanism
 1. [blue-bracket](https://github.com/kamangir/blue-bracket): Multiple machine vision & ai designs on raspberry pi and jetson nano on the edge.
 1. [RAW Vancouver PORTAL 2022](https://github.com/kamangir/RAW-Vancouver-PORTAL-2022): A [digital art installation](https://rawartists.com/vancouver).
 
----
+## How?
 
 To build an [`abcli`](https://github.com/kamangir/awesome-bash-cli) plugin you need code that is executed through the command line. This code should exist in a repo, i.e. `<plugin-name>`. Now, follow these steps:
 

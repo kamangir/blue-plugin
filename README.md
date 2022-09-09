@@ -1,4 +1,4 @@
-# blue-plugins
+# blue-plugin
 
 ## What?
 

@@ -1,5 +1,5 @@
 NAME = "blue_plugin"
 
-VERSION = "2.44.1"
+VERSION = "2.46.1"
 
 from .functions import *

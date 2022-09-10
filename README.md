@@ -25,9 +25,9 @@ To build an `abcli` plugin you need code that is executed through the command li
 
 1. [Create the new repository `\<plugin-name\>` from `blue-plugin`](https://github.com/kamangir/blue-plugin/generate).
 1. Type in,
-```bash
-abcli git clone <plugin-name>
-```
+    ```bash
+    abcli git clone <plugin-name>
+    ```
 1. Modify `~/git/<plugin-name>` and start developing... 🚀 
 
 ## Advanced

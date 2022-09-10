@@ -6,7 +6,7 @@ function blue_plugin_session() {
     if [ "$task" == "start" ] ; then
         abcli_log "blue-plugin: session started."
 
-        python3 -m blue_plugin.session.start ${@:3}
+        # session code here
 
         abcli_log "blue-plugin: session ended."
         return

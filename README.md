@@ -1,6 +1,6 @@
 # blue-plugin
 
-An [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`) plugin is a mechanism to add functionality to `abcli`. Examples of `abcli` plugins are:
+An [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`) plugin is a mechanism to run python and bash on Linux. Examples of `abcli` plugins are:
 
 1. [blue-rvr](https://github.com/kamangir/blue-rvr): A rover that carries a camera, runs deep learning vision models through python and TensorFlow, and is cloud-connected.
 1. [blue-sbc](https://github.com/kamangir/blue-sbc): python + bash bootstrap for single board computers: Raspberry Pi & Jetson Nano.

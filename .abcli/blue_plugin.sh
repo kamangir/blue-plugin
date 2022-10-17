@@ -20,6 +20,7 @@ function blue_plugin() {
 
     if [[ $(type -t blue_plugin_$task) == "function" ]] ; then
         blue_plugin_$task ${@:2}
+        return
     fi
 
     if [ "$task" == "task_1" ] ; then

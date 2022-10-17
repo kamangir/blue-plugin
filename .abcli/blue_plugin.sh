@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 function bp() {
-    blue-plugin $@
+    blue_plugin $@
 }
 
 function blue_plugin() {

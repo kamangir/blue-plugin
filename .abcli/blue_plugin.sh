@@ -18,8 +18,9 @@ function blue_plugin() {
         return
     fi
 
-    if [[ $(type -t blue_plugin_$task) == "function" ]] ; then
-        blue_plugin_$task ${@:2}
+    local function_name=blue_plugin_$task
+    if [[ $(type -t $function_name) == "function" ]] ; then
+        $function_name ${@:2}
         return
     fi
 

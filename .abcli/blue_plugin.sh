@@ -23,7 +23,7 @@ function blue_plugin() {
     fi
 
     if [ "$task" == "version" ] ; then
-        abcli_log $(python3 -m blue_plugin version ${@:2})
+        python3 -m blue_plugin version ${@:2}
         return
     fi
 

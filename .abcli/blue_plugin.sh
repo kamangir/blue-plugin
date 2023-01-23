@@ -8,6 +8,9 @@ function blue_plugin() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ] ; then
+        abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
+            "task things."
+
         # blue_plugin_task $@
 
         if [ "$(abcli_keyword_is $2 verbose)" == true ] ; then
@@ -22,10 +25,15 @@ function blue_plugin() {
         return
     fi
 
-    if [ "$task" == "version" ] ; then
-        python3 -m blue_plugin version ${@:2}
+    if [ "$task" == "task" ] ; then
+        python3 -m blue_plugin \
+            task \
+            --what $(abcli_clarify_input $2 all) \
+            ${@:3}
         return
     fi
 
-    abcli_log_error "-blue_plugin: $task: command not found."
+    python3 -m blue_plugin \
+        $task \
+        ${@:2}
 }

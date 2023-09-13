@@ -13,6 +13,7 @@ To build an `abcli` plugin you need python3 code that is executed through the co
 ## TL;DR
 
 ```bash
-abcli git clone <plugin-name> init[,~from_template]
+abcli git clone <plugin-name> cd
+source transform.sh
 ```
 

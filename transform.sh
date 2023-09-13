@@ -26,8 +26,6 @@ function transform() {
     done
 
     echo "# $plugin_name" > README.md
-
-    rm -v transform.sh
 }
 
 transform "$@"

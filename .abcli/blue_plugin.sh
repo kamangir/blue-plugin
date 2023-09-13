@@ -1,9 +1,5 @@
 #! /usr/bin/env bash
 
-function bp() {
-    blue_plugin $@
-}
-
 function blue_plugin() {
     local task=$(abcli_unpack_keyword $1 help)
 

@@ -2,9 +2,19 @@
 
 ## TL;DR
 
+1️⃣ create a new repository from this template.
+
+2️⃣
+
 ```bash
 abcli git clone <plugin-name> cd
 source transform.sh
+```
+
+3️⃣
+```bash
+abcli init clear
+<plugin-name> help
 ```
 
 ---

@@ -10,6 +10,8 @@ function blue_plugin() {
     if [ $task == "help" ]; then
         blue_plugin version \\n
 
+        blue_plugin_conda "$@"
+
         abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
             "task things."
 

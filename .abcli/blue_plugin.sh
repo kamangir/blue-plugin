@@ -31,6 +31,7 @@ function blue_plugin() {
 
     if [ "$task" == "init" ]; then
         abcli_init blue_plugin "${@:2}"
+        conda activate blue_plugin
         return
     fi
 

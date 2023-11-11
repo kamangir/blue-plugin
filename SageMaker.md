@@ -1,4 +1,4 @@
-# SageMaker set-up
+# SageMaker terraform
 
 To use on [AWS SageMaker](https://aws.amazon.com/sagemaker/), replace `<plugin-name>` with the name of the plugin and follow these steps. First, generate the seed 🌱,
 

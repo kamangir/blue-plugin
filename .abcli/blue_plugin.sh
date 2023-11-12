@@ -15,6 +15,8 @@ function blue_plugin() {
         abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
             "task things."
 
+        blue_plugin_test "$@"
+
         # blue_plugin_task "$@"
 
         if [ "$(abcli_keyword_is $2 verbose)" == true ]; then

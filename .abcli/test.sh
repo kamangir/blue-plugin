@@ -4,7 +4,7 @@ function blue_plugin_test() {
     local options=$1
 
     if [ $(abcli_option_int "$options" help 0) == 1 ]; then
-        abcli_show_usage "blue_plugin test [dryrun,~this,~that]" \
+        abcli_show_usage "blue_plugin test$ABCUL[dryrun,~this,~that]" \
             "test blue_plugin."
         return
     fi

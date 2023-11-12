@@ -14,14 +14,12 @@ function blue_plugin_test() {
     local test_that=$(abcli_option_int "$options" that 1)
 
     if [ "$test_this" == 1 ]; then
-        abcli_log "testing this..."
-
-        echo "wip"
+        abcli_eval dryrun=$do_dryrun \
+            echo testing this ...
     fi
 
     if [ "$test_that" == 1 ]; then
-        abcli_log "testing this..."
-
-        echo "wip"
+        abcli_eval dryrun=$do_dryrun \
+            echo testing that ...
     fi
 }

@@ -1,16 +1,17 @@
 # SageMaker set-up
 
-To use on [AWS SageMaker](https://aws.amazon.com/sagemaker/), replace `<plugin-name>` with the name of the plugin and follow these steps. First, generate the seed 🌱,
+To use on [AWS SageMaker](https://aws.amazon.com/sagemaker/), change the environment to a `PyTorch 2` image, `Python3` kernel, `ml.g4dn.xlarge` and replace `<plugin-name>` with the name of the plugin in the following instructions. 
+
+Open the "system terminal" and paste the sagemaker-system seed 🌱,
 
 ```bash
-@seed sagemaker-system plugin=<plugin-name>,screen
+@seed sagemaker-system plugin=<plugin-name>
 ```
 
-Then, change the environment to a `PyTorch 2` image, `Python3` kernel, `ml.g4dn.xlarge` instance, open the "System terminal", evaluate the machine, and decide which parts of the seeds to use. Then generate the seed 🌱,
+Open as many image terminals as you wish and paste the sagemaker seed 🌱
 
 ```bash
 @seed sagemaker plugin=<plugin-name>
 ```
-and "open image terminal", and paste the seed 🌱. 
 
 ![image](./assets/sagemaker.jpg)

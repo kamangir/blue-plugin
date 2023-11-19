@@ -16,4 +16,6 @@ Open as many image terminals as you wish and paste the sagemaker seed 🌱
 
 ![image](./assets/sagemaker.jpg)
 
+---
+
 Currently supports [🌈 Vancouver-Watching](https://github.com/kamangir/Vancouver-Watching) and [🏛️ roofAI](https://github.com/kamangir/roofAI) and [🌀 blue plugin]()s `> 2.88.1`.

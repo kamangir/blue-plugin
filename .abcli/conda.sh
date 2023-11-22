@@ -23,7 +23,7 @@ function blue_plugin_conda() {
             return
         fi
 
-        abcli_conda create_env clone=base,name=$environment_name
+        abcli_conda create_env name=$environment_name
 
         pip3 install pymysql==0.10.1
         # pip3 install ...

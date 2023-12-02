@@ -12,6 +12,8 @@ function blue_plugin() {
 
         blue_plugin_conda "$@"
 
+        blue_plugin pytest "$@"
+
         abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
             "task things."
 

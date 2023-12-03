@@ -8,8 +8,6 @@ function blue_plugin() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ]; then
-        blue_plugin version \\n
-
         blue_plugin_conda "$@"
 
         blue_plugin pytest "$@"
@@ -54,7 +52,7 @@ function blue_plugin() {
     fi
 
     if [ "$task" == "version" ]; then
-        abcli_log "🌀 $(python3 -m blue_plugin version --show_description 1)${@:2}"
+        python3 -m blue_plugin version
         return
     fi
 

@@ -22,7 +22,7 @@ function blue_plugin_subtask() {
             ls "${@:4}"
 
         [[ "$do_dryrun" == 1 ]] &&
-            abcli_upload object $object_name
+            abcli_upload - $object_name
 
         return
     fi

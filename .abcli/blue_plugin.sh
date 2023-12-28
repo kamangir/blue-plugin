@@ -52,7 +52,7 @@ function blue_plugin() {
     fi
 
     if [ "$task" == "version" ]; then
-        python3 -m blue_plugin version
+        python3 -m blue_plugin version "${@:2}"
         return
     fi
 

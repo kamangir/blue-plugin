@@ -10,6 +10,7 @@ function blue_plugin() {
     if [ $task == "help" ]; then
         blue_plugin_conda "$@"
 
+        blue_plugin pylint "$@"
         blue_plugin pytest "$@"
 
         abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
@@ -34,6 +35,25 @@ function blue_plugin() {
     if [ "$task" == "init" ]; then
         abcli_init blue_plugin "${@:2}"
         conda activate blue_plugin
+        return
+    fi
+
+    if [ "$task" == "pylint" ]; then
+        if [[ "$2" == "help" ]]; then
+            abcli_show_usage "blue_plugin pylint <args>" \
+                "pylint blue_plugin."
+            return
+        fi
+
+        abcli_pip install pylint
+
+        pushd $abcli_path_git/blue-plugin >/dev/null
+        pylint \
+            -d $abcli_pylint_ignored \
+            $(git ls-files '*.py') \
+            "${@:2}"
+        popd >/dev/null
+
         return
     fi
 

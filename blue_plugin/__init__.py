@@ -1,6 +1,6 @@
 NAME = "blue_plugin"
 
-VERSION = "2.101.1"
+VERSION = "2.102.1"
 
 DESCRIPTION = "🌀 template for an awesome-bash-cli plugin."
 

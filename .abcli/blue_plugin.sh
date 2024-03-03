@@ -57,8 +57,8 @@ function blue_plugin() {
         return
     fi
 
-    if [ "$task" == "pytest" ]; then
-        abcli_pytest plugin=blue_plugin,$2 \
+    if [[ "|pytest|test|" == *"|$task|"* ]]; then
+        abcli_${task} plugin=blue_plugin,$2 \
             "${@:3}"
         return
     fi

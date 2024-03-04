@@ -1,4 +1,4 @@
-from abcli import logging
-import logging
+from abcli.logger import logging
+from blue_plugin import ICON
 
-logger = logging.getLogger("bp")
+logger = logging.getLogger(f"{ICON} ")

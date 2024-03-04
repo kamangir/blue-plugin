@@ -1,7 +1,7 @@
 NAME = "blue_plugin"
 
-VERSION = "2.105.1"
+ICON = "🌀"
 
-DESCRIPTION = "🌀 template for an awesome-bash-cli plugin."
+DESCRIPTION = f"{ICON} template for an awesome-bash-cli plugin."
 
-from .functions import *
+VERSION = "2.106.1"

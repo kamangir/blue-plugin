@@ -13,13 +13,13 @@ function blue_plugin() {
         blue_plugin_subtask_leaf "$@"
         blue_plugin_subtask_node "$@"
 
-        blue_plugin pylint "$@"
-        blue_plugin pytest "$@"
+        local task
+        for task in pylint pytest test; do
+            blue_plugin $task "$@"
+        done
 
         abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
             "task things."
-
-        blue_plugin test "$@"
 
         if [ "$(abcli_keyword_is $2 verbose)" == true ]; then
             python3 -m blue_plugin --help

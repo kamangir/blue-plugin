@@ -16,8 +16,8 @@ function blue_plugin_node() {
 
     if [ "$task" == "<task-1>" ]; then
         local options=$2
-        local do_download=$(abcli_option_int "$options" download $(abcli_not $do_dryrun))
         local do_dryrun=$(abcli_option_int "$options" dryrun 0)
+        local do_download=$(abcli_option_int "$options" download $(abcli_not $do_dryrun))
         local do_upload=$(abcli_option_int "$options" upload $(abcli_not $do_dryrun))
 
         local object_name_1=$(abcli_clarify_object $3 .)

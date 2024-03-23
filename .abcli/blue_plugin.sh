@@ -65,3 +65,8 @@ function blue_plugin() {
 
 abcli_source_path \
     $abcli_path_git/blue-plugin/.abcli/tests
+
+abcli_env dot load \
+    plugin=blue_plugin
+abcli_env dot load \
+    filename=config.env,plugin=blue_plugin

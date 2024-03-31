@@ -8,7 +8,7 @@ Create a new repository from this template. Then replace `<plugin-name>` with th
 
 ```bash
 @git clone <plugin-name> cd
-source transform.sh <plugin-name>
+source transform.sh
 ```
 
 ```bash

@@ -1,11 +1,9 @@
 #! /usr/bin/env bash
 
-# run this script to transform the plugin to a repo with the given name.
-
 function transform() {
     local plugin_name=$(basename $(pwd))
 
-    abcli_log "blue_plugin transformer $version -> $plugin_name"
+    abcli_log "blue_plugin -> $plugin_name"
 
     git mv blue_plugin $plugin_name
     git mv .abcli/blue_plugin.sh .abcli/$plugin_name.sh
@@ -14,13 +12,13 @@ function transform() {
 
     local filename
     for filename in \
-        ./.abcli/install/bats.sh \
-        ./.abcli/bats.sh \
-        ./bats/__init__.py \
+        ./.abcli/install/$plugin_name.sh \
+        ./.abcli/$plugin_name.sh \
+        ./$plugin_name/__init__.py \
         ./setup.py; do
 
         python3 -m abcli.file replace \
-            --filename ~/git/$filename \
+            --filename $filename \
             --this blue_plugin \
             --that $plugin_name
     done

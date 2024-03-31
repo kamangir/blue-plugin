@@ -7,14 +7,15 @@
 Create a new repository from this template. Then replace `<plugin-name>` with the name of the plugin and run these commands,
 
 ```bash
-abcli git clone <plugin-name> cd
-source transform.sh
+@git clone <plugin-name> cd
+source transform.sh <plugin-name>
 ```
 
 ```bash
-abcli init clear
+@init clear
 <plugin-name> help
 ```
+
 Then replace this content ⬆️ with a description of the plugin and keep ⬇️.
 
 ---

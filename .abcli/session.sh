@@ -3,7 +3,7 @@
 function blue_plugin_session() {
     local task=$(abcli_unpack_keyword $1 help)
 
-    if [ "$task" == "start" ] ; then
+    if [ "$task" == "start" ]; then
         abcli_log "blue-plugin: session started."
 
         # session code here
@@ -13,4 +13,5 @@ function blue_plugin_session() {
     fi
 
     abcli_log_error "-blue-plugin: session: $task: command not found."
+    return 1
 }

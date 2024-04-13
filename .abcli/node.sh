@@ -11,6 +11,8 @@ function blue_plugin_node() {
 
         abcli_show_usage "blue_plugin node <task-2> ..." \
             "blue-plugin node <task-2> <object-name>."
+
+        blue_plugin_node_leaf "$@"
         return
     fi
 
@@ -39,6 +41,12 @@ function blue_plugin_node() {
         return
     fi
 
+    local function_name=blue_plugin_node_$task
+    if [[ $(type -t $function_name) == "function" ]]; then
+        $function_name "${@:2}"
+        return
+    fi
+
     if [ "$task" == "<task-2>" ]; then
         :
         return
@@ -47,3 +55,6 @@ function blue_plugin_node() {
     abcli_log_error "-blue_plugin: node: $task: command not found."
     return 1
 }
+
+abcli_source_path \
+    $abcli_path_git/blue-plugin/.abcli/node

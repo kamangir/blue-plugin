@@ -71,4 +71,4 @@ abcli_source_path \
 abcli_env dot load \
     plugin=blue_plugin
 abcli_env dot load \
-    filename=config.env,plugin=blue_plugin
+    filename=blue_plugin/config.env,plugin=blue_plugin

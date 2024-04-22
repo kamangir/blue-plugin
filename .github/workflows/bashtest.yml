@@ -35,4 +35,4 @@ jobs:
           echo "ABCLI_AWS_RDS_PASSWORD: $ABCLI_AWS_RDS_PASSWORD"
           pwd
           ls
-          echo ./.github/workflows/bashtest.sh blue_plugin
+          ./.github/workflows/bashtest.sh blue_plugin

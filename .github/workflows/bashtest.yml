@@ -40,9 +40,7 @@ jobs:
 
           cd awesome-bash-cli
 
-          pip3 install -e .
           pip3 install -r requirements.txt
-
           source ./bash/abcli.sh ~terraform blue_plugin test
 
           popd >/dev/null

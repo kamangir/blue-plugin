@@ -35,12 +35,8 @@ jobs:
           echo "ABCLI_AWS_RDS_PASSWORD: $ABCLI_AWS_RDS_PASSWORD"
 
           pushd ../../../ >/dev/null
-
           git clone https://github.com/kamangir/awesome-bash-cli.git
-
-          cd awesome-bash-cli
-
-          pip3 install -r requirements.txt
-          source ./bash/abcli.sh ~terraform blue_plugin test
-
           popd >/dev/null
+
+          source ../../../awesome-bash-cli/bash/abcli.sh ~terraform blue_plugin test
+

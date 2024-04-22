@@ -5,10 +5,6 @@ function bashtest() {
 
     local plugin_name=$1
 
-    echo "inside bashtest"
-    pwd
-    ls
-
     cd ..
     git clone https://github.com/kamangir/awesome-bash-cli.git
 

@@ -33,10 +33,5 @@ jobs:
           echo "AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY"
           echo "ABCLI_AWS_RDS_HOST: $ABCLI_AWS_RDS_HOST"
           echo "ABCLI_AWS_RDS_PASSWORD: $ABCLI_AWS_RDS_PASSWORD"
-
-          pushd ../../../ >/dev/null
-          git clone https://github.com/kamangir/awesome-bash-cli.git
-          popd >/dev/null
-
-          source ../../../awesome-bash-cli/bash/abcli.sh ~terraform blue_plugin test
+          ./.github/workflows/bashtest.sh blue_plugin
 

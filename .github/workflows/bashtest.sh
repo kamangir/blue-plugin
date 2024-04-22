@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function runme() {
+function bashtest() {
     # set -x # verbose-mode
 
     local plugin_name=$1
@@ -14,4 +14,4 @@ function runme() {
     return
 }
 
-runme "$@"
+bashtest "$@"

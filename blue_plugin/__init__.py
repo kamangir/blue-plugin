@@ -4,4 +4,4 @@ ICON = "🌀"
 
 DESCRIPTION = f"{ICON} template for an awesome-bash-cli plugin."
 
-VERSION = "2.136.1"
+VERSION = "2.137.1"

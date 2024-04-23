@@ -8,8 +8,6 @@ function blue_plugin() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ]; then
-        blue_plugin_conda "$@"
-
         blue_plugin_leaf "$@"
         blue_plugin_node "$@"
 

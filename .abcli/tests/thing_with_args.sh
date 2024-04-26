@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function test_blue_plugin_thing_with_args_batch() {
+function test_blue_plugin_thing_with_args() {
     local arg
     for arg in this that; do
         internal_test_blue_plugin_thing_with_args \
@@ -14,10 +14,6 @@ function internal_test_blue_plugin_thing_with_args() {
     local do_dryrun=$(abcli_option_int "$options" dryrun 0)
 
     local arg=$(abcli_option "$options" arg value)
-    if [[ -z "$arg" ]]; then
-        abcli_log_error "unknown arg."
-        return 1
-    fi
 
     local test_options=$2
 

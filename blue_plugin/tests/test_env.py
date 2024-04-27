@@ -1,5 +1,5 @@
 from abcli.tests import test_env
-from blue_plugin import env
+from blue_plugin.env import env
 
 
 def test_abcli_env():
@@ -7,4 +7,5 @@ def test_abcli_env():
 
 
 def test_blue_plugin_env():
-    assert env.BLUE_PLUGIN_CONFIG
+    for var in env.vars:
+        assert getattr(env, var), var

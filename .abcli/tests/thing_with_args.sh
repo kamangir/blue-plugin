@@ -8,7 +8,7 @@ function test_blue_plugin_thing_with_args() {
     for arg in this that; do
         abcli_log "testing arg=$arg ..."
 
-        abcli_eval $options, \
+        abcli_eval ,$options \
             echo "🪄 $arg"
     done
 }

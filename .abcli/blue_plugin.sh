@@ -11,18 +11,13 @@ function blue_plugin() {
         blue_plugin_leaf "$@"
         blue_plugin_node "$@"
 
-        local task
-        for task in pylint pytest test; do
-            blue_plugin $task "$@"
-        done
-
         abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
             "task things."
 
-        if [ "$(abcli_keyword_is $2 verbose)" == true ]; then
+        $(abcli_keyword_is $2 verbose) &&
             python3 -m blue_plugin --help
-        fi
-        return
+
+        return 0
     fi
 
     local function_name=blue_plugin_$task

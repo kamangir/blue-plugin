@@ -40,6 +40,13 @@ function blue_plugin() {
         return
     fi
 
+    if [[ "|pypi|" == *"|$task|"* ]]; then
+        abcli_${task} "$2" \
+            plugin=blue_plugin,$3 \
+            "${@:4}"
+        return
+    fi
+
     if [ "$task" == "task" ]; then
         python3 -m blue_plugin \
             task \

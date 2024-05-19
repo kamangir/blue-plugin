@@ -6,7 +6,7 @@ from blue_plugin import NAME, VERSION, DESCRIPTION
 with open(os.path.join(os.path.dirname(__file__), "README.md")) as f:
     long_description = f.read().replace(
         "./",
-        "https://github.com/kamangir/awesome-bash-cli/raw/current/",
+        "https://github.com/kamangir/blue-plugin/raw/main/",
     )
 
 

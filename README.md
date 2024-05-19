@@ -1,6 +1,6 @@
 # 🌀 blue-plugin
 
-`blue-plugin` is a git template for a plugin for [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`), to build [thing like these](https://github.com/kamangir?tab=repositories).
+`blue-plugin` is a template for a plugin for [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`), to build [thing like these](https://github.com/kamangir?tab=repositories).
 
 ---
 

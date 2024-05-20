@@ -9,8 +9,8 @@ with open(os.path.join(os.path.dirname(__file__), "README.md")) as f:
         "https://github.com/kamangir/blue-plugin/raw/main/",
     )
 
-with open(os.path.join(os.path.dirname(__file__), "requirements.txt")) as f:
-    requirements = f.read().split("\n")
+# with open(os.path.join(os.path.dirname(__file__), "requirements.txt")) as f:
+#    requirements = f.read().split("\n")
 
 
 setup(

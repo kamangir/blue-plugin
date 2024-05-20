@@ -9,9 +9,8 @@ with open(os.path.join(os.path.dirname(__file__), "README.md")) as f:
         "https://github.com/kamangir/blue-plugin/raw/main/",
     )
 
-# with open(os.path.join(os.path.dirname(__file__), "requirements.txt")) as f:
-#    requirements = f.read().split("\n")
-
+with open(os.path.join(os.path.dirname(__file__), "requirements.txt")) as f:
+    requirements = f.read().strip().split("\n")
 
 setup(
     name=NAME,
@@ -26,17 +25,12 @@ setup(
     package_data={
         NAME: ["config.env"],
     },
-    install_requires=[],  # requirements,
+    install_requires=requirements,
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Unix Shell",
         "License :: Public Domain",
         "Operating System :: OS Independent",
     ],
-    entry_points={
-        "console_scripts": [
-            "blue-plugin=blue_plugin:main",  # Example entry point
-        ],
-    },
     license="Public Domain",
 )

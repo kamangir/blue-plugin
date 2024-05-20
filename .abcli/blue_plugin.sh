@@ -13,11 +13,7 @@ function blue_plugin() {
 
         abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
             "task things."
-
-        $(abcli_keyword_is $2 verbose) &&
-            python3 -m blue_plugin --help
-
-        return 0
+        return
     fi
 
     local function_name=blue_plugin_$task

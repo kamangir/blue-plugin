@@ -55,9 +55,7 @@ function blue_plugin() {
         return
     fi
 
-    python3 -m blue_plugin \
-        "$task" \
-        "${@:2}"
+    python3 -m blue_plugin "$@"
 }
 
 abcli_source_path \

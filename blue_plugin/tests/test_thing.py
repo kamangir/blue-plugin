@@ -1,4 +1,5 @@
 import pytest
+from abcli.modules.objects import unique_object
 
 
 @pytest.mark.parametrize(
@@ -25,4 +26,6 @@ def test_thing(
     var3: str,
     var4: str,
 ):
+    object_name = unique_object()
+
     assert True

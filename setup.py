@@ -30,7 +30,7 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Bash",
-        "License :: CC0 1.0 Universal",
+        "License :: Public Domain",
         "Operating System :: OS Independent",
     ],
     entry_points={
@@ -38,5 +38,5 @@ setup(
             "blue-plugin=blue_plugin:main",  # Example entry point
         ],
     },
-    license="CC0 1.0 Universal",
+    license="Public Domain",
 )

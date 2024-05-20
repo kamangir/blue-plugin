@@ -29,7 +29,7 @@ setup(
     install_requires=[],  # requirements,
     classifiers=[
         "Programming Language :: Python :: 3",
-        "Programming Language :: Bash",
+        "Programming Language :: Unix Shell",
         "License :: Public Domain",
         "Operating System :: OS Independent",
     ],

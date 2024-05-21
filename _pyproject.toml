@@ -5,3 +5,4 @@ requires = [
     "blueness"
 ]
 build-backend = "setuptools.build_meta"
+backend-path = ["./"]

@@ -28,4 +28,4 @@ def test_thing(
 ):
     object_name = unique_object()
 
-    assert True
+    assert object_name

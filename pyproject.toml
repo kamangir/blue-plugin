@@ -2,6 +2,5 @@
 requires = [
     "setuptools>=42",
     "blueness",
-    "blue_plugin"
 ]
 build-backend = "setuptools.build_meta"

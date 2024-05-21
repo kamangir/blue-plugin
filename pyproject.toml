@@ -1,6 +1,5 @@
 [build-system]
 requires = [
     "setuptools>=42",
-    "blueness",
 ]
 build-backend = "setuptools.build_meta"

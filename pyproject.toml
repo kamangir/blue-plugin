@@ -1,7 +1,0 @@
-[build-system]
-requires = [
-    "setuptools>=42",
-    "wheel",
-    "blueness"  # Ensure this is listed if it's a required dependency
-]
-build-backend = "setuptools.build_meta"

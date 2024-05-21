@@ -1,5 +1,3 @@
-import os
-
 from blue_plugin import NAME, VERSION, DESCRIPTION
 from blueness.pypi import setup
 

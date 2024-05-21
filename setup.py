@@ -1,4 +1,3 @@
-from setuptools import setup
 import os
 
 from blue_plugin import NAME, VERSION, DESCRIPTION

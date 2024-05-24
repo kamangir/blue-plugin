@@ -10,48 +10,31 @@ function blue_plugin() {
     if [ $task == "help" ]; then
         blue_plugin_leaf "$@"
         blue_plugin_node "$@"
-
-        abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
-            "task things."
-        return
-    fi
-
-    local function_name=blue_plugin_$task
-    if [[ $(type -t $function_name) == "function" ]]; then
-        $function_name "${@:2}"
-        return
-    fi
-
-    if [ "$task" == "init" ]; then
-        abcli_init blue_plugin "${@:2}"
-
-        [[ $(abcli_conda exists blue_plugin) == 1 ]] &&
-            conda activate blue_plugin
-        return
-    fi
-
-    if [[ "|pylint|pytest|test|" == *"|$task|"* ]]; then
-        abcli_${task} plugin=blue_plugin,$2 \
-            "${@:3}"
-        return
-    fi
-
-    if [[ "|pypi|" == *"|$task|"* ]]; then
-        abcli_${task} "$2" \
-            plugin=blue_plugin,$3 \
-            "${@:4}"
+        blue_plugin task "$@"
         return
     fi
 
     if [ "$task" == "task" ]; then
+        local options=$2
+        if [ $(abcli_option_int "$options" help 0) == 1 ]; then
+            abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
+                "task things."
+            return
+        fi
+
+        local what=$(abcli_option "$options" what what)
+
         python3 -m blue_plugin \
             task \
-            --what $(abcli_clarify_input $2 all) \
+            --what "$what" \
             "${@:3}"
+
         return
     fi
 
-    python3 -m blue_plugin "$@"
+    abcli_generic_task \
+        plugin=blue_plugin,task=$task \
+        "${@:2}"
 }
 
 abcli_source_path \

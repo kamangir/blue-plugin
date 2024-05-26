@@ -9,7 +9,11 @@ setup(
     version=VERSION,
     description=DESCRIPTION,
     packages=[NAME],
+    include_package_data=True,
     package_data={
-        NAME: ["config.env"],
+        NAME: [
+            "config.env",
+            ".abcli/**/*.sh",
+        ],
     },
 )

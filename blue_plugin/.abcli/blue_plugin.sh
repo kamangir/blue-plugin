@@ -32,3 +32,5 @@ function blue_plugin() {
         plugin=blue_plugin,task=$task \
         "${@:2}"
 }
+
+abcli_log $(blue_plugin version --show_icon 1)

@@ -18,5 +18,4 @@ function blue_plugin_node() {
     return 1
 }
 
-abcli_source_path \
-    $abcli_path_git/blue-plugin/.abcli/node
+abcli_source_path - caller,suffix=/node

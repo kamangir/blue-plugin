@@ -18,4 +18,4 @@ Open as many image terminals as you wish and paste the sagemaker seed 🌱
 
 ---
 
-supports: [🌈 Vancouver-Watching](https://github.com/kamangir/Vancouver-Watching), [🏛️ roofAI](https://github.com/kamangir/roofAI), [🌀 blue plugin]()s `> 2.88.1`.
+supports: [🌈 vancouver-watching](https://github.com/kamangir/vancouver-watching), [🏛️ roofAI](https://github.com/kamangir/roofAI), [🌀 blue plugin]()s `> 2.88.1`.

@@ -18,7 +18,7 @@ pip install blue-plugin
 
 # creating a blue-plugin
 
-create a new repository from this template. then replace `<plugin-name>` with the name of the plugin and run these commands,
+create a new repository from [this repo](./), then replace `<plugin-name>` with the name of the plugin and run these commands,
 
 ```bash
 @git clone <plugin-name> cd
@@ -28,7 +28,7 @@ source transform.sh
 <plugin-name> help
 ```
 
-then move this section and update the rest of this document according to the plugin.
+then remove this section and update the rest of this document according to `<plugin-name>`.
 
 ---
 

@@ -1,6 +1,6 @@
 # 🌀 blue-plugin
 
-🌀 `blue-plugin` is a git template for a plugin for [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`), to build [things like these](https://github.com/kamangir?tab=repositories) that out-of-the-box support,
+🌀 `blue-plugin` is a git template for a 🚀 [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`) plugin, to build [things like these](https://github.com/kamangir?tab=repositories) that out-of-the-box support,
 
 - [pytest](https://docs.pytest.org/).
 - [pylint](https://pypi.org/project/pylint/).

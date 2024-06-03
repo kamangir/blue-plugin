@@ -10,13 +10,13 @@
 - a bash interface.
 - bash testing.
 
-# installation
+## installation
 
 ```bash
 pip install blue-plugin
 ```
 
-# creating a blue-plugin
+## creating a blue-plugin
 
 create a new repository from [this repo](https://github.com/kamangir/blue-plugin), then replace `<plugin-name>` with the name of the plugin and run these commands,
 

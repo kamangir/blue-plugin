@@ -4,10 +4,10 @@
 
 - [pytest](https://docs.pytest.org/).
 - [pylint](https://pypi.org/project/pylint/).
-- bash testing.
 - a python package.
 - [pypi](https://pypi.org/).
 - a bash interface.
+- bash testing.
 
 # usage instructions
 

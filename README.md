@@ -10,7 +10,13 @@
 - a bash interface.
 - bash testing.
 
-# usage instructions
+# installation
+
+```bash
+pip install blue-plugin
+```
+
+# creating a blue-plugin
 
 create a new repository from this template. then replace `<plugin-name>` with the name of the plugin and run these commands,
 
@@ -23,12 +29,6 @@ source transform.sh
 ```
 
 then move this section and update the rest of this document according to the plugin.
-
-# installation
-
-```bash
-pip install blue-plugin
-```
 
 ---
 

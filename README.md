@@ -18,7 +18,7 @@ pip install blue-plugin
 
 # creating a blue-plugin
 
-create a new repository from [this repo](./), then replace `<plugin-name>` with the name of the plugin and run these commands,
+create a new repository from [this repo](https://github.com/kamangir/blue-plugin), then replace `<plugin-name>` with the name of the plugin and run these commands,
 
 ```bash
 @git clone <plugin-name> cd

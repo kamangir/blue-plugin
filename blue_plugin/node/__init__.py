@@ -1,3 +1,3 @@
-from blue_plugin import NAME, VERSION
+from blue_plugin import NAME
 
 NAME = f"{NAME}.node"

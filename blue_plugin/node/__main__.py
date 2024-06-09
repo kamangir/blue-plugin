@@ -1,5 +1,6 @@
 import argparse
-from blue_plugin import NAME, VERSION
+from blue_plugin import VERSION
+from blue_plugin.node import NAME
 from blue_plugin.node.functions import func
 from blue_plugin.logger import logger
 

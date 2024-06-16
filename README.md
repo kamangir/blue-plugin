@@ -18,17 +18,18 @@ pip install blue-plugin
 
 ## creating a blue-plugin
 
-create a new repository from [this repo](https://github.com/kamangir/blue-plugin), then replace `<plugin-name>` with the name of the plugin and run these commands,
+1️⃣ create a new repository from [this template](https://github.com/kamangir/blue-plugin),
+
+2️⃣ replace `<plugin-name>` with the name of the plugin and run these commands,
 
 ```bash
 @git clone <plugin-name> cd
-source transform.sh
 
-@init clear
+blue_plugin transform <plugin-name>
+
+@init
 <plugin-name> help
 ```
-
-then remove this section and update the rest of this document according to `<plugin-name>`.
 
 ---
 

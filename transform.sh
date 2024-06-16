@@ -17,8 +17,8 @@ function transform() {
         ./$plugin_name/__init__.py \
         ./setup.py; do
 
-        python3 -m abcli.file replace \
-            --filename $filename \
+        abcli_file replace \
+            $filename \
             --this blue_plugin \
             --that $plugin_name
     done

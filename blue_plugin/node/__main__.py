@@ -3,7 +3,7 @@ from blue_plugin import VERSION
 from blue_plugin.node import NAME
 from blue_plugin.node.functions import func
 from blue_plugin.logger import logger
-from blueness.argparse.generic import ending
+from blueness.argparse.generic import sys_exit
 
 parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
 parser.add_argument(
@@ -25,4 +25,4 @@ if args.task == "task":
 else:
     success = None
 
-ending(logger, NAME, args.task, success)
+sys_exit(logger, NAME, args.task, success)

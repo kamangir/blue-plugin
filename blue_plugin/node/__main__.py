@@ -3,6 +3,7 @@ from blue_plugin import VERSION
 from blue_plugin.node import NAME
 from blue_plugin.node.functions import func
 from blue_plugin.logger import logger
+from blueness.argparse.generic import ending
 
 parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
 parser.add_argument(
@@ -22,7 +23,6 @@ success = False
 if args.task == "task":
     success = func(args.arg)
 else:
-    logger.error(f"-{NAME}: {args.task}: command not found.")
+    success = None
 
-if not success:
-    logger.error(f"-{NAME}: {args.task}: failed.")
+ending(logger, NAME, args.task, success)

@@ -4,10 +4,8 @@ ICON = "🌀"
 
 DESCRIPTION = f"{ICON} a git template for an awesome-bash-cli plugin."
 
-VERSION = "3.84.1"
+VERSION = "3.85.1"
 
 REPO_NAME = "blue-plugin"
 
-MARQUEE = (
-    "https://github.com/kamangir/assets/blob/main/blue-plugin/marquee.png?raw=true"
-)
+MARQUEE = "https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true"

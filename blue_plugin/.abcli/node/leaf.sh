@@ -29,7 +29,7 @@ function blue_plugin_node_leaf() {
         --object_name_2 $object_name_2 \
         "${@:4}"
 
-    [[ "$do_dryrun" == 1 ]] &&
+    [[ "$do_upload" == 1 ]] &&
         abcli_upload - $object_name_2
 
     return 0

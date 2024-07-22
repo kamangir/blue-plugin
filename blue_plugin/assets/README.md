@@ -33,9 +33,7 @@ pip install blue-plugin
 
 ---
 
-|   |   |   |
-| --- | --- | --- |
-| 🌀[`feature 1`](#) [![image](https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true)](#) description of feature 1 ... | 🌀[`feature 2`](#) [![image](https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true)](#) description of feature 2 ... | 🌀[`feature 3`](#) [![image](https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true)](#) description of feature 3 ... |
+--table--
 
 ---
 
@@ -44,5 +42,4 @@ pip install blue-plugin
 To use on [AWS SageMaker](https://aws.amazon.com/sagemaker/) replace `<plugin-name>` with the name of the plugin and follow [these instructions](https://github.com/kamangir/notebooks-and-scripts/blob/main/SageMaker.md).
 
 
----
-built by [`abcli-9.181.1-markdown-2024-07-21-a`](https://github.com/kamangir/awesome-bash-cli), based on [`blue_plugin-3.89.1`](https://github.com/kamangir/blue_plugin).
+--signature--

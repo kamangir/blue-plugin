@@ -4,9 +4,18 @@ function blue_plugin() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ]; then
+        blue_plugin build_README "$@"
+
         blue_plugin_leaf "$@"
         blue_plugin_node "$@"
         blue_plugin task "$@"
+        return
+    fi
+
+    if [ "$task" == "build_README" ]; then
+        abcli_build_README \
+            plugin=blue_plugin,$2 \
+            "${@:3}"
         return
     fi
 

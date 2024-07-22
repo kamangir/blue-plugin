@@ -10,7 +10,7 @@ success, message = main(
     DESCRIPTION,
     ICON,
     {
-        "build_README": lambda args: README.build(),
+        "build_README": lambda _: README.build(),
     },
 )
 if not success:

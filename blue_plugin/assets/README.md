@@ -31,7 +31,7 @@ pip install blue-plugin
 <plugin-name> help
 ```
 
----
+## features
 
 --table--
 

@@ -40,7 +40,7 @@ def build(filename: str = ""):
             "https://github.com/kamangir/awesome-bash-cli",
             NAME,
             VERSION,
-            "https://github.com/kamangir/blue_plugin",
+            "https://github.com/kamangir/blue-plugin",
         ),
     ]
 

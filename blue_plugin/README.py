@@ -6,6 +6,8 @@ from abcli.plugins import markdown
 from blue_plugin import NAME, VERSION, ICON
 from blue_plugin.logger import logger
 
+NAME = f"{NAME}.README"
+
 
 def build(filename: str = ""):
     if not filename:

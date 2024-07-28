@@ -13,4 +13,6 @@ function test_blue_plugin_help() {
             $module help
         [[ $? -ne 0 ]] && return 1
     done
+
+    return 0
 }

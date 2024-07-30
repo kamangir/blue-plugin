@@ -45,4 +45,4 @@ To use on [AWS SageMaker](https://aws.amazon.com/sagemaker/) replace `<plugin-na
 
 
 ---
-built by [`abcli-9.183.1-current`](https://github.com/kamangir/awesome-bash-cli), based on [`blue_plugin.README-3.101.1`](https://github.com/kamangir/blue-plugin).
+built by [`abcli-9.186.1-current`](https://github.com/kamangir/awesome-bash-cli), based on [`blue_plugin-3.109.1`](https://github.com/kamangir/blue-plugin).

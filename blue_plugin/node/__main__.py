@@ -1,9 +1,11 @@
 import argparse
-from blue_plugin import VERSION
-from blue_plugin.node import NAME
+from blueness import module
+from blue_plugin import NAME, VERSION
 from blue_plugin.node.functions import func
 from blue_plugin.logger import logger
 from blueness.argparse.generic import sys_exit
+
+NAME = module.name(__file__, NAME)
 
 parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
 parser.add_argument(

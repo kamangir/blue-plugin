@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function test_blue_plugin_generic() {
+function test_blue_plugin_README() {
     local options=$1
 
     abcli_eval ,$options \

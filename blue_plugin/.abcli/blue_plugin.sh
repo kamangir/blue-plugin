@@ -4,6 +4,7 @@ function blue_plugin() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ]; then
+        blue_plugin_browse "$@"
         blue_plugin_leaf "$@"
         blue_plugin_node "$@"
         blue_plugin task "$@"

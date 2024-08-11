@@ -6,6 +6,7 @@ function test_blue_plugin_help() {
     local module
     for module in \
         "blue_plugin" \
+        "blue_plugin browse" \
         "blue_plugin leaf" \
         "blue_plugin node" \
         "blue_plugin node leaf"; do

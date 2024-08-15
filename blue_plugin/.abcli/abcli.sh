@@ -6,5 +6,5 @@ abcli_source_path - \
 abcli_env_dot_load \
     caller,ssm,suffix=/../..
 
-abcli_env dot load \
-    filename=blue_plugin/config.env,plugin=blue_plugin
+abcli_env_dot_load \
+    caller,filename=config.env,suffix=/..

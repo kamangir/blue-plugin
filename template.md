@@ -9,6 +9,7 @@
 - [pypi](https://pypi.org/).
 - a bash interface.
 - bash testing.
+- [ssm](https://docs.aws.amazon.com/secretsmanager/).
 
 ## installation
 

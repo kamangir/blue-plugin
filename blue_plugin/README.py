@@ -20,7 +20,7 @@ def build():
         items=items,
         template_filename=os.path.join(
             file.path(__file__),
-            "./assets/README.md",
+            "../template.md",
         ),
         filename=os.path.join(
             file.path(__file__),

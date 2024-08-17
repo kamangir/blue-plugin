@@ -40,10 +40,8 @@ pip install blue-plugin
 
 ---
 
-[![PyPI version](https://img.shields.io/pypi/v/blue-plugin.svg)](https://pypi.org/project/blue-plugin/)
+to use on [AWS SageMaker](https://aws.amazon.com/sagemaker/) replace `<plugin-name>` with "blue_plugin" and follow [these instructions](https://github.com/kamangir/notebooks-and-scripts/blob/main/SageMaker.md).
 
-To use on [AWS SageMaker](https://aws.amazon.com/sagemaker/) replace `<plugin-name>` with the name of the plugin and follow [these instructions](https://github.com/kamangir/notebooks-and-scripts/blob/main/SageMaker.md).
+[![pylint](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-plugin.svg)](https://pypi.org/project/blue-plugin/)
 
-
----
-built by [`abcli-9.227.1-current`](https://github.com/kamangir/awesome-bash-cli), based on [`blue_plugin-3.130.1`](https://github.com/kamangir/blue-plugin).
+built by 🪄 [`abcli-9.243.1-current`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_plugin-3.131.1`](https://github.com/kamangir/blue-plugin).

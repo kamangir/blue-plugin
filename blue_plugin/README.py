@@ -1,3 +1,4 @@
+import os
 from abcli import file
 from abcli.plugins.README import build as build_README
 from blue_plugin import NAME, VERSION, ICON, REPO_NAME
@@ -17,7 +18,7 @@ items = [
 def build():
     return build_README(
         items=items,
-        path=file.path(__file__),
+        path=os.path.join(file.path(__file__), ".."),
         ICON=ICON,
         NAME=NAME,
         VERSION=VERSION,

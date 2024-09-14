@@ -1,5 +1,6 @@
 import pytest
-from abcli.modules.objects import unique_object
+
+from blue_objects.objects import unique_object
 
 
 @pytest.mark.parametrize(

@@ -1,4 +1,5 @@
 blueness
+blue-options
 abcli
 boto3
 geojson

@@ -1,6 +1,7 @@
 import os
-from abcli import file
-from abcli.plugins.README import build as build_README
+
+from blue_objects import file, README
+
 from blue_plugin import NAME, VERSION, ICON, REPO_NAME
 
 
@@ -16,7 +17,7 @@ items = [
 
 
 def build():
-    return build_README(
+    return README.build(
         items=items,
         path=os.path.join(file.path(__file__), ".."),
         ICON=ICON,

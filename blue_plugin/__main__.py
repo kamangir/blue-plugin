@@ -1,7 +1,7 @@
-from blue_plugin import NAME, VERSION, DESCRIPTION, ICON
-from blue_plugin import README
-from blue_plugin.logger import logger
 from blueness.argparse.generic import main
+
+from blue_plugin import NAME, VERSION, DESCRIPTION, ICON, README
+from blue_plugin.logger import logger
 
 main(
     ICON=ICON,

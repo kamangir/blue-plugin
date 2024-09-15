@@ -44,4 +44,4 @@ to use on [AWS SageMaker](https://aws.amazon.com/sagemaker/) replace `<plugin-na
 
 [![pylint](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-plugin.svg)](https://pypi.org/project/blue-plugin/)
 
-built by 🌀 [`blue_options-4.73.1-abcli-metadata-2024-09-15-09097`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_plugin-3.149.1`](https://github.com/kamangir/blue-plugin).
+built by 🌀 [`blue_options-4.73.1-abcli-metadata-2024-09-15-09097`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_plugin-3.150.1`](https://github.com/kamangir/blue-plugin).

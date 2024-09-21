@@ -1,13 +1,15 @@
 import argparse
+
 from blueness import module
-from blue_plugin import NAME, VERSION
+from blueness.argparse.generic import sys_exit
+
+from blue_plugin import NAME
 from blue_plugin.node.functions import func
 from blue_plugin.logger import logger
-from blueness.argparse.generic import sys_exit
 
 NAME = module.name(__file__, NAME)
 
-parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
+parser = argparse.ArgumentParser(NAME)
 parser.add_argument(
     "task",
     type=str,

@@ -2,14 +2,13 @@
 
 🌀 `blue-plugin` is a git template for an 🪄 [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`) plugin, to build [things like these](https://github.com/kamangir?tab=repositories), that out-of-the-box support,
 
-- a git repo with actions.
+- a [github repo](https://github.com/) with [actions](https://github.com/features/actions).
 - [pytest](https://docs.pytest.org/).
 - [pylint](https://pypi.org/project/pylint/).
-- a python package.
-- [pypi](https://pypi.org/).
+- a python package published to [pypi](https://pypi.org/).
 - a bash interface.
 - bash testing.
-- [ssm](https://docs.aws.amazon.com/secretsmanager/).
+- secret management through [ssm](https://docs.aws.amazon.com/secretsmanager/).
 
 ## installation
 

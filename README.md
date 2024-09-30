@@ -2,14 +2,13 @@
 
 🌀 `blue-plugin` is a git template for an 🪄 [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`) plugin, to build [things like these](https://github.com/kamangir?tab=repositories), that out-of-the-box support,
 
-- a git repo with actions.
+- a [github repo](https://github.com/) with [actions](https://github.com/features/actions).
 - [pytest](https://docs.pytest.org/).
 - [pylint](https://pypi.org/project/pylint/).
-- a python package.
-- [pypi](https://pypi.org/).
+- a python package published to [pypi](https://pypi.org/).
 - a bash interface.
 - bash testing.
-- [ssm](https://docs.aws.amazon.com/secretsmanager/).
+- secret management through [ssm](https://docs.aws.amazon.com/secretsmanager/).
 
 ## installation
 
@@ -44,4 +43,4 @@ to use on [AWS SageMaker](https://aws.amazon.com/sagemaker/) replace `<plugin-na
 
 [![pylint](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-plugin.svg)](https://pypi.org/project/blue-plugin/)
 
-built by 🌀 [`blue_options-4.85.1-abcli-current`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_plugin-3.155.1`](https://github.com/kamangir/blue-plugin).
+built by 🌀 [`blue_options-4.85.1-abcli-current`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_plugin-3.156.1`](https://github.com/kamangir/blue-plugin).

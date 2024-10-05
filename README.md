@@ -3,12 +3,16 @@
 🌀 `blue-plugin` is a git template for an 🪄 [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`) plugin, to build [things like these](https://github.com/kamangir?tab=repositories), that out-of-the-box support,
 
 - a [github repo](https://github.com/) with [actions](https://github.com/features/actions).
-- [pytest](https://docs.pytest.org/).
 - [pylint](https://pypi.org/project/pylint/).
-- a python package published to [pypi](https://pypi.org/).
-- a bash interface.
-- bash testing.
+- [pytest](https://docs.pytest.org/).
+- a pip-installable python + bash package published to [pypi](https://pypi.org/).
+- a bash [command interface](./blue_plugin/.abcli/blue_plugin.sh).
+- [bash testing](./.github/workflows/bashtest.yml).
 - secret management through [ssm](https://docs.aws.amazon.com/secretsmanager/).
+- in-repo [compiled](./blue_plugin/README.py) READMEs based on [templates](./template.md).
+- [object management](https://github.com/kamangir/blue-objects) on [Amazon S3](https://aws.amazon.com/s3/) with metadata tracking by [MLflow](https://mlflow.org/).
+- [workflow management](https://github.com/kamangir/notebooks-and-scripts/tree/main/notebooks_and_scripts/workflow) on [AWS Batch](https://aws.amazon.com/batch/).
+- [docker](https://github.com/kamangir/notebooks-and-scripts/blob/main/notebooks_and_scripts/.abcli/docker.sh) and [SageMaker](https://github.com/kamangir/notebooks-and-scripts/blob/main/notebooks_and_scripts/.abcli/sagemaker.sh) enabled.
 
 ## installation
 
@@ -43,4 +47,4 @@ to use on [AWS SageMaker](https://aws.amazon.com/sagemaker/) replace `<plugin-na
 
 [![pylint](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-plugin.svg)](https://pypi.org/project/blue-plugin/)
 
-built by 🌀 [`blue_options-4.85.1-abcli-current`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_plugin-3.156.1`](https://github.com/kamangir/blue-plugin).
+built by 🌀 [`blue_options-4.86.1-abcli-current`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_plugin-3.157.1`](https://github.com/kamangir/blue-plugin).

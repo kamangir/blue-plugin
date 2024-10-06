@@ -1,12 +1,10 @@
-from abcli import fullname as abcli_fullname
-
 NAME = "blue_plugin"
 
 ICON = "🌀"
 
 DESCRIPTION = f"{ICON} a git template for an awesome-bash-cli plugin."
 
-VERSION = "3.158.1"
+VERSION = "3.159.1"
 
 REPO_NAME = "blue-plugin"
 
@@ -14,8 +12,4 @@ MARQUEE = "https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?r
 
 
 def fullname() -> str:
-    return "{}-{}-{}".format(
-        NAME,
-        VERSION,
-        abcli_fullname(),
-    )
+    return f"{NAME}-{VERSION}"

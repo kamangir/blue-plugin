@@ -4,7 +4,7 @@ ICON = "🌀"
 
 DESCRIPTION = f"{ICON} a git template for an awesome-bash-cli plugin."
 
-VERSION = "3.162.1"
+VERSION = "3.163.1"
 
 REPO_NAME = "blue-plugin"
 

@@ -4,27 +4,28 @@ function blue_plugin() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ]; then
-        blue_plugin_browse "$@"
-        blue_plugin_leaf "$@"
-        blue_plugin_node "$@"
-        blue_plugin task "$@"
+        abcli_show_usage_2 blue_plugin
+        return
+    fi
+
+    if [ "$2" == "help" ]; then
+        abcli_show_usage_2 blue_plugin $task
         return
     fi
 
     if [ "$task" == "task" ]; then
         local options=$2
-        if [ $(abcli_option_int "$options" help 0) == 1 ]; then
-            abcli_show_usage "blue_plugin task [<thing_1+thing_2>|all]" \
-                "task things."
-            return
-        fi
+        local do_dryrun=$(abcli_option "$options" dryrun 0)
+        local what=$(abcli_option "$options" what all)
 
-        local what=$(abcli_option "$options" what what)
+        local object_name_1=$(abcli_clarify_object $3 .)
 
-        python3 -m blue_plugin \
+        abcli_eval dryrun=$do_dryrun \
+            python3 -m blue_plugin \
             task \
             --what "$what" \
-            "${@:3}"
+            --object_name "$object_name_1" \
+            "${@:4}"
 
         return
     fi

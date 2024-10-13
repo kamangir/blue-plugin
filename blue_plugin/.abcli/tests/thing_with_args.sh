@@ -10,5 +10,8 @@ function test_blue_plugin_thing_with_args() {
 
         abcli_eval ,$options \
             echo "🪄 $arg"
+        [[ $? -ne 0 ]] && return 1
+
+        abcli_hr
     done
 }

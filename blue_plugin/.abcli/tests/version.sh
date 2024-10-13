@@ -5,6 +5,4 @@ function test_blue_plugin_version() {
 
     abcli_eval ,$options \
         "blue_plugin version ${@:2}"
-
-    return 0
 }

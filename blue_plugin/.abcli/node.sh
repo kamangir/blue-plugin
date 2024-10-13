@@ -3,8 +3,8 @@
 function blue_plugin_node() {
     local task=$(abcli_unpack_keyword $1 help)
 
-    if [ "$task" == "help" ]; then
-        blue_plugin_node_leaf "$@"
+    if [ "$2" == "help" ]; then
+        abcli_show_usage_2 blue_plugin node $task
         return
     fi
 
@@ -13,9 +13,7 @@ function blue_plugin_node() {
         $function_name "${@:2}"
         return
     fi
-
-    abcli_log_error "-blue_plugin: node: $task: command not found."
-    return 1
+    abcli_log "blue-plugin: node: 🪄"
 }
 
 abcli_source_caller_suffix_path /node

@@ -7,7 +7,11 @@ setup(
     name=NAME,
     version=VERSION,
     description=DESCRIPTION,
-    packages=[NAME],
+    packages=[
+        NAME,
+        f"{NAME}.help",
+        f"{NAME}.node",
+    ],
     include_package_data=True,
     package_data={
         NAME: [

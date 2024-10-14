@@ -2,6 +2,8 @@ from typing import List
 
 from blue_options.terminal import show_usage, xtra
 
+from blue_plugin.help.node.functions import help_functions as help_node
+
 
 def help_browse(
     tokens: List[str],
@@ -11,54 +13,11 @@ def help_browse(
 
     return show_usage(
         [
-            "blue_plugin",
+            "@plugin",
             "browse",
             f"[{options}]",
         ],
         "browse blue_plugin.",
-        mono=mono,
-    )
-
-
-def help_node(
-    tokens: List[str],
-    mono: bool,
-) -> str:
-    options = xtra("dryrun", mono=mono)
-
-    return show_usage(
-        [
-            "blue_plugin",
-            "node",
-            f"[{options}]",
-            "[.|<object-name>]",
-        ],
-        "blue-plugin node <object-name>.",
-        mono=mono,
-    )
-
-
-def help_node_leaf(
-    tokens: List[str],
-    mono: bool,
-) -> str:
-    options = xtra("~download,dryrun,~upload", mono=mono)
-    args = [
-        "[--<keyword-1> <value-1>]",
-        "[--<keyword-2> <value-2>]",
-    ]
-
-    return show_usage(
-        [
-            "blue_plugin",
-            "node",
-            "leaf",
-            f"[{options}]",
-            "[.|<object-name-1>]",
-            "[-|<object-name-2>]",
-        ]
-        + args,
-        "<object-name-1> -blue-plugin node leaf-> <object-name-2>.",
         mono=mono,
     )
 
@@ -75,7 +34,7 @@ def help_leaf(
 
     return show_usage(
         [
-            "blue_plugin",
+            "@plugin",
             "leaf",
             f"[{options}]",
             "[.|<object-name>]",
@@ -99,7 +58,7 @@ def help_task(
 
     return show_usage(
         [
-            "blue_plugin",
+            "@plugin",
             "task",
             f"[{options}]",
             "[.|<object-name>]",
@@ -112,9 +71,6 @@ def help_task(
 help_functions = {
     "browse": help_browse,
     "leaf": help_leaf,
-    "node": {
-        "": help_node,
-        "leaf": help_node_leaf,
-    },
+    "node": help_node,
     "task": help_task,
 }

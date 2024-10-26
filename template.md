@@ -11,8 +11,8 @@
 - secret management through [ssm](https://docs.aws.amazon.com/secretsmanager/).
 - in-repo [compiled](./blue_plugin/README.py) READMEs based on [templates](./template.md).
 - [object management](https://github.com/kamangir/blue-objects) on [Amazon S3](https://aws.amazon.com/s3/) with metadata tracking by [MLflow](https://mlflow.org/).
-- [workflow management](https://github.com/kamangir/notebooks-and-scripts/tree/main/notebooks_and_scripts/workflow) on [AWS Batch](https://aws.amazon.com/batch/).
-- [docker](https://github.com/kamangir/notebooks-and-scripts/blob/main/notebooks_and_scripts/.abcli/docker.sh) and [SageMaker](https://github.com/kamangir/notebooks-and-scripts/blob/main/notebooks_and_scripts/.abcli/sagemaker.sh) enabled.
+- [workflow management](https://github.com/kamangir/notebooks-and-scripts/tree/main/blueflow/workflow) on [AWS Batch](https://aws.amazon.com/batch/).
+- [docker](https://github.com/kamangir/notebooks-and-scripts/blob/main/blueflow/.abcli/docker.sh) and [SageMaker](https://github.com/kamangir/notebooks-and-scripts/blob/main/blueflow/.abcli/sagemaker.sh) enabled.
 
 ## installation
 

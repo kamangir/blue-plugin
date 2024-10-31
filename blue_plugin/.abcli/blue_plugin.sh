@@ -3,16 +3,6 @@
 function blue_plugin() {
     local task=$(abcli_unpack_keyword $1 help)
 
-    if [ $task == "help" ]; then
-        abcli_show_usage_2 blue_plugin
-        return
-    fi
-
-    if [ "$2" == "help" ]; then
-        abcli_show_usage_2 blue_plugin $task
-        return
-    fi
-
     if [ "$task" == "task" ]; then
         local options=$2
         local do_dryrun=$(abcli_option "$options" dryrun 0)

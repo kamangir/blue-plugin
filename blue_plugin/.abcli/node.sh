@@ -3,11 +3,6 @@
 function blue_plugin_node() {
     local task=$(abcli_unpack_keyword $1 help)
 
-    if [ "$2" == "help" ]; then
-        abcli_show_usage_2 blue_plugin node $task
-        return
-    fi
-
     local function_name=blue_plugin_node_$task
     if [[ $(type -t $function_name) == "function" ]]; then
         $function_name "${@:2}"

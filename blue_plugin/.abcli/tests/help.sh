@@ -12,8 +12,10 @@ function test_blue_plugin_help() {
         "blue_plugin node leaf" \
         "blue_plugin task"; do
         abcli_eval ,$options \
-            $module help
+            abcli_help $module
         [[ $? -ne 0 ]] && return 1
+
+        abcli_hr
     done
 
     return 0

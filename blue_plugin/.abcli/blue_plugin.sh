@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 function blue_plugin() {
-    local task=$(abcli_unpack_keyword $1 help)
+    local task=$(abcli_unpack_keyword $1 version)
 
     if [ "$task" == "task" ]; then
         local options=$2

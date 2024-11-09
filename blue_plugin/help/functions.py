@@ -1,7 +1,9 @@
 from typing import List
 
 from blue_options.terminal import show_usage, xtra
+from abcli.help.generic import generic_help_functions
 
+from blue_plugin import ALIAS
 from blue_plugin.help.node.functions import help_functions as help_node
 
 
@@ -68,9 +70,13 @@ def help_task(
     )
 
 
-help_functions = {
-    "browse": help_browse,
-    "leaf": help_leaf,
-    "node": help_node,
-    "task": help_task,
-}
+help_functions = generic_help_functions(plugin_name=ALIAS)
+
+help_functions.update(
+    {
+        "browse": help_browse,
+        "leaf": help_leaf,
+        "node": help_node,
+        "task": help_task,
+    }
+)

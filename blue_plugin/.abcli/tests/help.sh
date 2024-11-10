@@ -7,6 +7,11 @@ function test_blue_plugin_help() {
     for module in \
         "@plugin" \
         \
+        "@plugin pypi" \
+        "@plugin pypi browse" \
+        "@plugin pypi build" \
+        "@plugin pypi install" \
+        \
         "@plugin pytest" \
         \
         "@plugin browse" \

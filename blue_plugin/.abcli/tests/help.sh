@@ -14,11 +14,17 @@ function test_blue_plugin_help() {
         \
         "@plugin pytest" \
         \
+        "@plugin test" \
+        "@plugin test list" \
+        \
         "@plugin browse" \
         "@plugin leaf" \
         "@plugin node" \
         "@plugin node leaf" \
-        "@plugin task"; do
+        \
+        "@plugin task" \
+        \
+        "blue_plugin"; do
         abcli_eval ,$options \
             abcli_help $module
         [[ $? -ne 0 ]] && return 1

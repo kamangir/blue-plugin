@@ -8,7 +8,7 @@ function blue_plugin_node_leaf() {
 
     local object_name_1=$(abcli_clarify_object $2 .)
 
-    [[ "$do_dryrun" == 1 ]] &&
+    [[ "$do_download" == 1 ]] &&
         abcli_download - $object_name_1
 
     local object_name_2=$(abcli_clarify_object $3 blue_plugin_node_leaf-$(abcli_string_timestamp))

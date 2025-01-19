@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   build:
+    if: github.event.head_commit.message !~ 'no-workflow'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -25,17 +26,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ca-central-1
-      - name: Check for "no-workflow" in commit message
-        id: check_commit_message
-        run: |
-          echo "Commit message: ${{ github.event.head_commit.message }}"
-          if echo "${{ github.event.head_commit.message }}" | grep -q "no-workflow"; then
-            echo "::set-output name=skip_tests::true"
-          else
-            echo "::set-output name=skip_tests::false"
-          fi
       - name: Run tests
-        if: steps.check_commit_message.outputs.skip_tests == 'false'
         env:
           GITHUB_COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

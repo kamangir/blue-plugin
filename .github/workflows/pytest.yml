@@ -12,6 +12,7 @@ jobs:
           echo "Commit message: ${{ github.event.head_commit.message }}"
 
   build:
+    if: github.event.head_commit.message !~ 'no-workflow'
     runs-on: ubuntu-latest
     strategy:
       matrix:

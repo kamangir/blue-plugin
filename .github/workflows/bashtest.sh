@@ -5,6 +5,9 @@ function bashtest() {
 
     echo "GITHUB_COMMIT_MESSAGE: $GITHUB_COMMIT_MESSAGE"
 
+    [[ "$GITHUB_COMMIT_MESSAGE" == *"no-workflow"* ]] &&
+        return 0
+
     local plugin_name=$1
 
     cd ..

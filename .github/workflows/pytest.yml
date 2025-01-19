@@ -3,8 +3,17 @@ name: pytest
 on: [push]
 
 jobs:
+  log-commit-message:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Log commit message
+        run: |
+          echo "Commit message: '${{ github.event.head_commit.message }}'"
+
   build:
     runs-on: ubuntu-latest
+    if: "! contains(github.event.head_commit.message, 'no-workflow')"
     strategy:
       matrix:
         python-version: ["3.8", "3.9", "3.10"]

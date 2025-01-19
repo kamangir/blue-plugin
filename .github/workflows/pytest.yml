@@ -10,9 +10,6 @@ jobs:
       - name: Log commit message
         run: |
           echo "Commit message: '${{ github.event.head_commit.message }}'"
-          if [ -z "${{ github.event.head_commit.message }}" ]; then
-            echo "Warning: Commit message is empty or not accessible."
-          fi
 
   build:
     runs-on: ubuntu-latest

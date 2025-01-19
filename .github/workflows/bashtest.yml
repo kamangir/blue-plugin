@@ -3,17 +3,6 @@ name: bashtest
 on: [push]
 
 jobs:
-  log-commit-message:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Log commit message
-        run: |
-          echo "Commit message: '${{ github.event.head_commit.message }}'"
-          if [ -z "${{ github.event.head_commit.message }}" ]; then
-            echo "Warning: Commit message is empty or not accessible."
-          fi
-
   bashtest:
     runs-on: ubuntu-latest
     if: "! contains(github.event.head_commit.message, 'no-workflow')"

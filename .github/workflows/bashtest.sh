@@ -3,7 +3,7 @@
 function bashtest() {
     # set -x # verbose-mode
 
-    echo "GITHUB_EVENT: $GITHUB_EVENT"
+    echo "GITHUB_COMMIT_MESSAGE: $GITHUB_COMMIT_MESSAGE"
 
     local plugin_name=$1
 

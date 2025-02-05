@@ -1,6 +1,6 @@
 # 🌀 blue-plugin
 
-🌀 `blue-plugin` is a git template for an 🪄 [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`) plugin, to build [things like these](https://github.com/kamangir?tab=repositories), that out-of-the-box support,
+🌀 `@plugin` is a git template for an 🪄 [`awesome-bash-cli`](https://github.com/kamangir/awesome-bash-cli) (`abcli`) plugin, to build [things like these](https://github.com/kamangir?tab=repositories), that out-of-the-box support,
 
 - a [github repo](https://github.com/) with [actions](https://github.com/features/actions).
 - [pylint](https://pypi.org/project/pylint/).
@@ -46,4 +46,4 @@ pip install blue-plugin
 
 [![pylint](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-plugin/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-plugin.svg)](https://pypi.org/project/blue-plugin/) [![PyPI - Downloads](https://img.shields.io/pypi/dd/blue-plugin)](https://pypistats.org/packages/blue-plugin)
 
-built by 🌀 [`blue_options-4.202.1`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_plugin-3.213.1`](https://github.com/kamangir/blue-plugin).
+built by 🌀 [`blue_options-4.207.1`](https://github.com/kamangir/awesome-bash-cli), based on 🌀 [`blue_plugin-3.214.1`](https://github.com/kamangir/blue-plugin).

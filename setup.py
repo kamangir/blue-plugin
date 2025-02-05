@@ -1,5 +1,6 @@
-from blue_plugin import NAME, VERSION, DESCRIPTION, REPO_NAME
 from blueness.pypi import setup
+
+from blue_plugin import NAME, VERSION, DESCRIPTION, REPO_NAME
 
 setup(
     filename=__file__,

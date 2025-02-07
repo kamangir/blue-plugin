@@ -1,6 +1,6 @@
-blueness
-blue-options
 abcli
+blue-objects
+
 boto3
 geojson
 geopandas

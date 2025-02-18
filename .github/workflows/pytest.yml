@@ -41,10 +41,12 @@ jobs:
           BLUE_PLUGIN_SECRET: ${{ secrets.BLUE_PLUGIN_SECRET }}
           DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
           DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+          MLFLOW_TRACKING_URI: databricks
         run: |
           echo "AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID"
           echo "AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY"
           echo "BLUE_PLUGIN_SECRET: $BLUE_PLUGIN_SECRET"
           echo "DATABRICKS_HOST: $DATABRICKS_HOST"
           echo "DATABRICKS_TOKEN: $DATABRICKS_TOKEN"
+          echo "MLFLOW_TRACKING_URI: $MLFLOW_TRACKING_URI"
           pytest --verbose

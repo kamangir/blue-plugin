@@ -5,15 +5,17 @@ from blue_objects import file, README
 from blue_plugin import NAME, VERSION, ICON, REPO_NAME
 
 
-items = [
-    "{}[`{}`](#) [![image]({})](#) {}".format(
-        ICON,
-        f"feature {index}",
-        "https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true",
-        f"description of feature {index} ...",
-    )
-    for index in range(1, 4)
-]
+items = README.Items(
+    [
+        {
+            "name": f"description of feature {index} ...",
+            "marquee": "https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true",
+            "description": f"feature {index}",
+            "url": "#",
+        }
+        for index in range(1, 4)
+    ]
+)
 
 
 def build():

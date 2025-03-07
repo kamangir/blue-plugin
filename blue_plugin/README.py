@@ -8,9 +8,9 @@ from blue_plugin import NAME, VERSION, ICON, REPO_NAME
 items = README.Items(
     [
         {
-            "name": f"description of feature {index} ...",
+            "name": f"feature {index}",
             "marquee": "https://github.com/kamangir/assets/raw/main/blue-plugin/marquee.png?raw=true",
-            "description": f"feature {index}",
+            "description": f"description of feature {index} ...",
             "url": "#",
         }
         for index in range(1, 4)

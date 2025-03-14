@@ -9,7 +9,7 @@
 - a bash [command interface](./blue_plugin/.abcli/blue_plugin.sh).
 - [bash testing](./.github/workflows/bashtest.yml).
 - secret management through [ssm](https://docs.aws.amazon.com/secretsmanager/).
-- in-repo [compiled](./blue_plugin/README.py) READMEs based on [templates](./template.md).
+- in-repo [compiled](https://github.com/kamangir/blue-objects/tree/main/blue_objects/README) READMEs. example: [template.md](https://github.com/kamangir/palisades/blob/main/palisades/docs/damage-analytics-template.md) -> [README.md](https://github.com/kamangir/palisades/blob/main/palisades/docs/damage-analytics.md).
 - [object management](https://github.com/kamangir/blue-objects) on [Amazon S3](https://aws.amazon.com/s3/) with metadata tracking by [MLflow](https://mlflow.org/).
 - [workflow management](https://github.com/kamangir/notebooks-and-scripts/tree/main/blueflow/workflow) on [AWS Batch](https://aws.amazon.com/batch/).
 - [docker](https://github.com/kamangir/notebooks-and-scripts/blob/main/blueflow/.abcli/docker.sh) and [SageMaker](https://github.com/kamangir/notebooks-and-scripts/blob/main/blueflow/.abcli/sagemaker.sh) enabled.
@@ -37,8 +37,8 @@ pip install blue-plugin
 
 ## features
 
---table--
+items:::
 
 ---
 
---signature--
+signature:::
